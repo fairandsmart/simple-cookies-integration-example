@@ -4,7 +4,7 @@ function get_conf()
     $config = parse_ini_file(key_exists("CONFIG_FILE_PATH", $_ENV) ? $_ENV["CONFIG_FILE_PATH"] : "config.ini");
     $config["api_url"] = key_exists("API_URL", $_ENV) ? $_ENV["API_URL"] : $config["api_url"];
     $config["organisation_id"] = key_exists("ORGANISATION_ID", $_ENV) ? $_ENV["ORGANISATION_ID"] : $config["organisation_id"];
-    $config["model_id"] = key_exists("MODEL_ID", $_ENV) ? $_ENV["MODEL_ID_OR_ALIAS"] : $config["model_id"];
+    $config["model_id"] = key_exists("MODEL_ID", $_ENV) ? $_ENV["MODEL_ID"] : $config["model_id"];
     return $config;
 }
 
