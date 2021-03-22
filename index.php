@@ -5,6 +5,7 @@ function get_conf()
     $config["api_url"] = key_exists("API_URL", $_ENV) ? $_ENV["API_URL"] : $config["api_url"];
     $config["organisation_id"] = key_exists("ORGANISATION_ID", $_ENV) ? $_ENV["ORGANISATION_ID"] : $config["organisation_id"];
     $config["model_id"] = key_exists("MODEL_ID", $_ENV) ? $_ENV["MODEL_ID"] : $config["model_id"];
+    $config["tac_url"] = key_exists("TAC_URL", $_ENV) ? $_ENV["TAC_URL"] : $config["tac_url"];
     return $config;
 }
 
@@ -20,7 +21,7 @@ function get_cookie_style_url()
 
 function get_cookie_code_url()
 {
-    return "https://assets.fairandsmart.tech/tarteaucitron//tarteaucitron.js";
+     return get_conf()["tac_url"];
 }
 
 ?>
