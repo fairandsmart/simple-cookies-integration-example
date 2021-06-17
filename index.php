@@ -39,6 +39,11 @@ function get_static_cookie_script()
     <body>
 
     <h2>Simple Cookies Integration Example</h2>
+    <br>
+    <a href="#cookies-preferences" style="">Show cookies panel using a link</a>
+    <br>
+    <span onclick="document.location.hash = '#cookies-preferences';">Show cookies panel using a javascript call</span>
+    <br>
     <!-- Balises spécifiques des services -->
         <div class="content">
             <div class="left">
