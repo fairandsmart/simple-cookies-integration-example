@@ -56,6 +56,9 @@ function get_static_cookie_script()
                     <a href="https://twitter.com/share" class="twitter-share-button" data-size="LARGE" data-via="@FairandSmart" data-count="VERTICAL" data-dnt="true"></a>
                 <br/>
                 <div class="twitterembed-canvas" tweetid="1336270558577745921" theme="light" cards="SHOW" conversation="NONE" data-align="LEFT"></div>
+                <br>
+                <span class="tacLinkedin"></span>
+                <script type="IN/FollowCompany" data-id="10842147" data-counter="bottom"></script>
             </div>
             <div class="right">
                 <div class="youtube_player" videoID="Rzrk9kDbJvs" width="600" height="400" theme="LIGHT" rel="0" controls="0" showinfo="0" autoplay="0"></div>
