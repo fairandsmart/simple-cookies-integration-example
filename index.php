@@ -27,8 +27,9 @@ function get_static_cookie_script()
         <meta name="language" content="fr">
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <style>
-            h2 { text-align: center; margin-bottom: 100px; }
-            .left { display: flex; flex-direction: column; }
+            h2 { text-align: center; margin-bottom: 20px; }
+            h3 { text-align: center; margin-bottom: 20px; }
+            .left { display: flex; flex-direction: column; margin-left: 100px; }
             .share { display: flex; flex-direction: row; }
             .content { width: 100%; display: flex; flex-direction: row; justify-content: space-evenly; }
             .button-wrapper { margin-top: 100px; }
@@ -40,17 +41,16 @@ function get_static_cookie_script()
 
     <h2>Simple Cookies Integration Example</h2>
     <br>
-    <a href="#cookies-preferences" style="">Show cookies panel using a link</a>
+    <h3><a href="#cookies-preferences">Show cookies panel using a link</a></h3>
     <br>
-    <span onclick="document.location.hash = '#cookies-preferences';">Show cookies panel using a javascript call</span>
+    <h3 onclick="document.location.hash = '#cookies-preferences';">Show cookies panel using a javascript call</h3>
     <br>
     <!-- Balises spécifiques des services -->
         <div class="content">
             <div class="left">
-                <div class="share">
+                <br/>
                     <div class="fb-like" data-layout="standard" data-action="like" data-share="TRUE"></div>
                     <br/>
-                </div>
                 <span class="tacTwitter"></span>
                     <br/>
                     <a href="https://twitter.com/share" class="twitter-share-button" data-size="LARGE" data-via="@FairandSmart" data-count="VERTICAL" data-dnt="true"></a>
