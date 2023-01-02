@@ -1,7 +1,7 @@
 <?php
 function get_conf()
 {
-    $config = parse_ini_file(key_exists("CONFIG_FILE_PATH", $_ENV) ? $_ENV["CONFIG_FILE_PATH"] : "config.ini");
+    $config = parse_ini_file(key_exists("CONFIG_FILE_PATH", $_ENV) ? $_ENV["CONFIG_FILE_PATH"] : "my-config.ini");
     $config["api_url"] = key_exists("API_URL", $_ENV) ? $_ENV["API_URL"] : $config["api_url"];
     $config["dynamic_cookie_config_id"] = key_exists("DYNAMIC_COOKIE_CONFIG_ID", $_ENV) ? $_ENV["DYNAMIC_COOKIE_CONFIG_ID"] : $config["dynamic_cookie_config_id"];
     $config["static_cookie_content_id"] = key_exists("STATIC_COOKIE_CONTENT_ID", $_ENV) ? $_ENV["STATIC_COOKIE_CONTENT_ID"] : $config["static_cookie_content_id"];
@@ -49,11 +49,11 @@ function get_static_cookie_script()
         <div class="content">
             <div class="left">
                 <br/>
-                    <div class="fb-like" data-layout="standard" data-action="like" data-share="TRUE"></div>
-                    <br/>
+                <div class="fb-like" data-layout="standard" data-action="like" data-share="TRUE"></div>
+                <br/>
                 <span class="tacTwitter"></span>
-                    <br/>
-                    <a href="https://twitter.com/share" class="twitter-share-button" data-size="LARGE" data-via="@FairandSmart" data-count="VERTICAL" data-dnt="true"></a>
+                <br/>
+                <a href="https://twitter.com/share" class="twitter-share-button" data-size="LARGE" data-via="@FairandSmart" data-count="VERTICAL" data-dnt="true"></a>
                 <br/>
                 <div class="twitterembed-canvas" tweetid="1336270558577745921" theme="light" cards="SHOW" conversation="NONE" data-align="LEFT"></div>
                 <br>
@@ -64,5 +64,6 @@ function get_static_cookie_script()
                 <div class="youtube_player" videoID="Rzrk9kDbJvs" width="600" height="400" theme="LIGHT" rel="0" controls="0" showinfo="0" autoplay="0"></div>
             </div>
         </div>
+        <div id="afscontainer1"></div><div id="tac_adsense_search" pubId="VOTRE_IDENTIFIANT_DE_CLIENT" query="VOTRE_REQUETE" styleId="VOTRE_IDENTIFIANT_DE_STYLE"></div>
     </body>
 </html>
