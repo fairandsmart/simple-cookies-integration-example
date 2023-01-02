@@ -1,7 +1,7 @@
 <?php
 function get_conf()
 {
-    $config = parse_ini_file(key_exists("CONFIG_FILE_PATH", $_ENV) ? $_ENV["CONFIG_FILE_PATH"] : "my-config.ini");
+    $config = parse_ini_file(key_exists("CONFIG_FILE_PATH", $_ENV) ? $_ENV["CONFIG_FILE_PATH"] : "config.ini");
     $config["api_url"] = key_exists("API_URL", $_ENV) ? $_ENV["API_URL"] : $config["api_url"];
     $config["dynamic_cookie_config_id"] = key_exists("DYNAMIC_COOKIE_CONFIG_ID", $_ENV) ? $_ENV["DYNAMIC_COOKIE_CONFIG_ID"] : $config["dynamic_cookie_config_id"];
     $config["static_cookie_content_id"] = key_exists("STATIC_COOKIE_CONTENT_ID", $_ENV) ? $_ENV["STATIC_COOKIE_CONTENT_ID"] : $config["static_cookie_content_id"];
